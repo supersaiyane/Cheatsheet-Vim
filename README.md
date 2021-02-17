@@ -1,1 +1,0 @@
-# vim-cheet-sheet
