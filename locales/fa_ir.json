@@ -1,0 +1,340 @@
+{
+  "title": "Persian",
+  "lang": "fa_ir",
+  "lang_tag": "fa",
+  "cursorMovement": {
+    "title": "حرکت مکان نما",
+    "commands": {
+      "h": "حرکت مکان نما به سمت چپ",
+      "j": "حرکت مکان نما به سمت پایین",
+      "k": "حرکت مکان نما به سمت بالا",
+      "l": "حرکت مکان نما به سمت پایین",
+      "w": "برو به ابتدای کلمه",
+      "W": "برو به ابتدای کلمه(کلمه هایی که  شامل نقطه و علامت)",
+      "e": "برو به آخر کلمه",
+      "E": "برو به آخر کلمه (کلمه هایی که شامل نقطه و علامت)",
+      "b": "برو به ابتدای کلمه",
+      "B": "برو به ابتدای کلمه(کلمه هایی که شامل نقطه و علامت)",
+      "ge": "jump backwards to the end of a word",
+      "gE": "jump backwards to the end of a word (words can contain punctuation)",
+      "H": "برو به ابتدای نمایشگر",
+      "M": "برو به وسط نمایشگر",
+      "L": "برو به آخر نمایشگر",
+      "zero": "برو به ابتدای خط",
+      "caret": "برو به اولین کاراکتر با صرف نظر از فضای خالی",
+      "dollar": "برو به انتهای خط",
+      "g_": "برو به آخرین کاراکتر غیر بلاک",
+      "gg": "برو به اولین خط این فایل",
+      "G": "برو به آخرین خط این فایل",
+      "fiveG": "برو به خط شماره 5",
+      "gd": "move to local declaration",
+      "gD": "move to global declaration",
+      "fx": "برو به کاراکتر x",
+      "tx": "برو به یک کاراکتر قبل از x",
+      "Fx": "برو به کاراکتر x قبل از محل فعلی مکان نما",
+      "Tx": "برو به  یک کاراکتر بعد از کاراکتر x قبل از محل فعلی مکان نما",
+      "semicolon": "تکرار عملیات قبلی  اگر این عملیات F,f,T,t  باشد",
+      "comma": "مثل سمی کالمن اما برعکس",
+      "closeCurlyBrace": "برو به پاراگراف بعدی( یا تابع بعدی/ یابلاک بعدی)",
+      "openCurlyBrace": "برو به پاراگراف قبلی( یا تابع قبلی/ یا بلاک قبلی)",
+      "centerCursor": "قرار دادن خط فعلی در مرکز صفحه نمایش",
+      "CtrlPluse": "یک خط به پایین",
+      "CtrlPlusy": "یک خط به بالا",
+      "CtrlPlusb": "صفحه قبل",
+      "CtrlPlusf": "صفحه بعد",
+      "CtrlPlusu": "یک نیم صفحه قبل",
+      "CtrlPlusd": "یک نیم صفحه بعد",
+      "percent": "برو به براکت بسته(براکت ها می توانند '()','{}','[]' باشند)"
+    },
+    "tip": "برای تکرار دستورهای حرکتی از پیشوند استفاده کنید. برای مثال 4j به 4 خط پایین تر می رود."
+  },
+  "insertMode": {
+    "title": "افزودن و اضافه کردن",
+    "commands": {
+      "i": "اضافه کن به قبل از مکان فعلی مکان نما",
+      "I": "اضافه کن به ابتدای خط",
+      "a": "اضافه کن بعد از مکان فعلی مکان نما",
+      "A": "اضافه کن به انتهای خط",
+      "o": "اضافه کن به خط بعدی",
+      "O": "اضافه کن به خط قبلی",
+      "ea": "اضافه کن به انتهای کلمه",
+      "ctrlPlush": "delete the character before the cursor during insert mode",
+      "ctrlPlusw": "delete word before the cursor during insert mode",
+      "ctrlPlusj": "begin new line during insert mode",
+      "ctrlPlust": "indent (move right) line one shiftwidth during insert mode",
+      "ctrlPlusd": "de-indent (move left) line one shiftwidth during insert mode",
+      "ctrlPlusn": "insert (auto-complete) next match before the cursor during insert mode",
+      "ctrlPlusp": "insert (auto-complete) previous match before the cursor during insert mode",
+      "ctrlPlusrx": "insert the contents of register x",
+      "Esc": "از مد اضافه خارج شو"
+    }
+  },
+  "editing": {
+    "title": "تصحیح",
+    "commands": {
+      "r": "یک کاراکتر را جایگزین کن",
+      "J": "خط بعدی را به خط فعلی بچسبان با فاصله",
+      "gJ": "خط بعدی را بدون فاصله به خط فعلی بچسبان",
+      "gwip": "جمع کردن پاراگراف",
+      "gTilde": "switch case up to motion",
+      "gu": "change to lowercase up to motion",
+      "gU": "change to uppercase up to motion",
+      "cc": "خط فعلی را جایگزین کن",
+      "C": "change (replace) to the end of the line",
+      "cDollar": "از مکان فعلی تا آخر خط را جایگزین کن",
+      "ciw": "خط فعلی را جایگزین کن",
+      "cw": "کلمه فعلی را جایگزین کن",
+      "s": "کاراکتر فعلی را جایگزین کن",
+      "S": "خط فعلی را جایگزین کن(مثل cc)",
+      "xp": "ترانهادن دو کاراکتر(پاک کردن و چسباندن)",
+      "u": "بازگرداندن",
+      "U": "restore (undo) last changed line",
+      "CtrlPlusr": "دوباره انجام بده",
+      "dot": "فرمان قبلی را تکرار کن"
+    }
+  },
+  "markingText": {
+    "title": "علامت گذاری(مد بصری)",
+    "commands": {
+      "v": "ورود به مد بصری",
+      "V": "ورود به مد بصری برای کار روی خط",
+      "o": "برو به طرف دیگر ناحیه علامت گذاری شده",
+      "CtrlPlusv": "ورود به مد بصری برای علامت گذاری یک بلاک",
+      "O": "برو به گوشه دیگر بلاک انتخاب شده",
+      "aw": "یک کلمه را علامت گذاری کن",
+      "ab": "یک بلاکت با ()",
+      "aB": "یک بلاک با {}",
+      "at": "a block with <> tags",
+      "ib": "بلاک داخل ()",
+      "iB": "بلاک داخل {}",
+      "it": "inner block with <> tags",
+      "Esc": "از مد بصری خارج شو"
+    },
+    "tip1": "Instead of <kbd>b</kbd> or <kbd>B</kbd> one can also use <kbd>(</kbd> or <kbd>{</kbd> respectively."
+  },
+  "visualCommands": {
+    "title": "دستورات مد بصری",
+    "commands": {
+      "greaterThan": "حرکت متن به سمت راست",
+      "lessThan": "حرکت متن به سمت چپ",
+      "y": "کپی کردن متن",
+      "d": "حذف متن",
+      "tilde": "تغییر از حرف کوچک به بزرگ یا برعکس",
+      "u": "change marked text to lowercase",
+      "U": "change marked text to uppercase"
+    }
+  },
+  "registers": {
+    "title": "رجیسترها",
+    "commands": {
+      "show": "محتوای رجیستر را نمایش بده",
+      "pasteRegisterX": "کپی کردن به رجیستر x",
+      "yankIntoRegisterX": "محتوای رجیستر x را پیست کن",
+      "quotePlusy": "yank into the system clipboard register",
+      "quotePlusp": "paste from the system clipboard register"
+    },
+    "tip1": "محتوای رجیستر ها در فایل ~/.viminfo ذخیره می شوند و بعد از ریستارت برنامه به آنها دسترسی دارید.",
+    "tip2": {
+      "0": "last yank",
+      "title": "Special registers:",
+      "quote": "unnamed register, last delete or yank",
+      "percent": "current file name",
+      "hashtag": "alternate file name",
+      "asterisk": "clipboard contents (X11 primary)",
+      "plus": "clipboard contents (X11 clipboard)",
+      "slash": "last search pattern",
+      "colon": "last command-line",
+      "dot": "last inserted text",
+      "minus": "last small (less than a line) delete",
+      "equal": "expression register",
+      "underscore": "black hole register"
+    }
+  },
+  "marks": {
+    "title": "علامت ها",
+    "commands": {
+      "list": "لیست علامت ها",
+      "currentPositionA": "مکان فعلی را به عنوان علامت a نشان کن",
+      "jumpPositionA": "برو به مکانی که به عنوان a نشان شده است",
+      "yankToMarkA": "متن را به مکانی که به عنوان a نشان شده کپی کن",
+      "backtick0": "go to the position where Vim was previously exited",
+      "backtickQuote": "go to the position when last editing this file",
+      "backtickDot": "go to the position of the last change in this file",
+      "backtickBacktick": "go to the position before the last jump",
+      "colonjumps": "list of jumps",
+      "ctrlPlusi": "go to newer position in jump list",
+      "ctrlPluso": "go to older position in jump list",
+      "colonchanges": "list of changes",
+      "gcomma": "go to newer position in change list",
+      "gsemicolon": "go to older position in change list",
+      "ctrlPlusCloseSquare": "jump to the tag under cursor"
+    },
+    "tip1": "To jump to a mark you can either use a backtick (<kbd>`</kbd>) or an apostrophe (<kbd>'</kbd>). Using an apostrophe jumps to the beginning (first non-black) of the line holding the mark.",
+    "tip": ""
+  },
+  "macros": {
+    "title": "ماکروها",
+    "commands": {
+      "recordA": "ضبط ماکرو 'a'",
+      "stopRecording": "توقف ضبط ماکرو",
+      "runA": "اجرای ماکروی 'a'",
+      "rerun": "اجرای دوباره آخرین ماکروی اجرا شده"
+    }
+  },
+  "global": {
+    "title": "فرمان های کلی",
+    "commands": {
+      "helpForKeyword": "کمک در مورد keyword",
+      "saveAsFile": "ذخیره کردن با عنوان",
+      "closePane": "بستن پنل فعلی",
+      "K": "open man page for word under the cursor",
+      "colonTerminal": "open a terminal window",
+      "openFile": "ذخیره کردن file"
+    },
+    "tip1": "Run <kbd>vimtutor</kbd> in a terminal to learn the first Vim commands."
+  },
+  "cutAndPaste": {
+    "title": "کپی کردن و چسباندن",
+    "commands": {
+      "yy": "کپی کردن هط",
+      "twoyy": "کپی کردن 2 خط",
+      "yw": "کپی کردن از مکان فعلی مکان نما تا ابتدای کلمه بعد",
+      "yiw": "کپی کردن کلمه",
+      "yaw": "",
+      "yDollar": "کپی کردن تا آخری خط",
+      "p": "چسباندن محتوای کلیپ بورد بعد از مکان فعلی مکان نما",
+      "P": "چسباندن محتوای کلیپ بورد قبل از مکان فعلی مکان نما",
+      "dd": "کات کردن خط فعلی",
+      "twodd": "کات کردن دو خط",
+      "dw": "کات کردن از مکان فعلی مکان نما تا ابتدای کلمه بعدی",
+      "diw": "",
+      "daw": "",
+      "D": "کات کردن تا انتهای خط",
+      "dDollar": "کات کردن تا انتهای خط",
+      "x": "کات کردن یک کاراکتر"
+    }
+  },
+  "indentText": {
+    "title": "Indent text",
+    "commands": {
+      "greaterThanGreaterThan": "indent (move right) line one shiftwidth",
+      "lessThanLessThan": "de-indent (move left) line one shiftwidth",
+      "greaterThanPercent": "indent a block with () or {} (cursor on brace)",
+      "greaterThanib": "indent inner block with ()",
+      "greaterThanat": "indent a block with <> tags",
+      "3==": "re-indent 3 lines",
+      "=Percent": "re-indent a block with () or {} (cursor on brace)",
+      "=iB": "re-indent inner block with {}",
+      "gg=G": "re-indent entire buffer",
+      "closeSquarep": "paste and adjust indent to current line"
+    }
+  },
+  "exiting": {
+    "title": "خارج شدن",
+    "commands": {
+      "colonw": "ذخیره کن اما خارج نشو",
+      "colonwsudo": "فایل فعلی را با sudo ذخیره کن",
+      "colonwq": "ذخیره کن و خارج شو",
+      "colonx": "ذخیره کن و خارج شو",
+      "colonq": "خارج شو(اگر فایلهای ذخیره نشده باشد) خطا میدهد",
+      "colonqbang": "خارج شو و از فایلهای ذخیره نشده صرف نظر کن",
+      "colonwqa": "همه ها فایلها در همه ی تبها را ذخیره کن و خارج شو"
+    }
+  },
+  "searchAndReplace": {
+    "title": "جستجو و جایگذاری",
+    "commands": {
+      "forwardSlashPattern": "جستجوی الگو ",
+      "questionMarkPattern": "جستجوی الگو از مکان فعلی مکان نما به قبل",
+      "backslashVpattern": "الگوی 'very magic': حروف و اعداد غیر به عنوان regex شناخته می شوند",
+      "n": "تکرار جستجو در جهت قبلی",
+      "N": "تکرار جستجو مخالف جهت قبلی",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashg": "جایگذاری الگوی old با الگوی new",
+      "colonPercentForwardSlashOldForwardSlashNewForwardSlashgc": "جایگذاری الگوی old با الگوی new  همراه با سوال",
+      "colonnoh": "برداشتن هایلایت از نتایج جستجو"
+    }
+  },
+  "searchMultipleFiles": {
+    "title": "جستجو در چند فایل",
+    "commands": {
+      "colonvimgrep": "جستجوی الگو در چند فایل",
+      "coloncn": "برو به نتیجه بعدی",
+      "coloncp": "برو به نتیجه قبلی",
+      "coloncopen": "باز کردن یک پنجره که شامل لیست نتایج جستجو باشد",
+      "coloncclose": "close the quickfix window"
+    }
+  },
+  "workingWithMultipleFiles": {
+    "title": "کار کردن با چند فایل",
+    "commands": {
+      "colone": "کار کردن با یک فایل در بافر جدید",
+      "colonbnext": "برو به بافر بعدی",
+      "colonbprev": "برو به بافر قبلی",
+      "colonls": "لیست تمامی بافرهای باز",
+      "colonbd": "بستن بافر(بسته شدن فایل)",
+      "colonbnumber": "go to a buffer by #",
+      "colonbfile": "go to a buffer by file",
+      "colonsp": "باز کردن فایل در پنجره جدید و  به دو قسمت کردن پنجره",
+      "colonvsp": "باز کردن فایل در پنجره جدید و به دو قسمت کردن پنجره به صورت عمودی",
+      "colonvertba": "edit all buffers as vertical windows",
+      "colontabba": "edit all buffers as tabs",
+      "ctrlPlusws": "به دو قسمت کردن پنجره",
+      "ctrlPluswv": "به دو قسمت کردن به صورت عمودی",
+      "ctrlPlusww": "سوئیچ کردن مابین پنجره ها",
+      "ctrlPluswq": "خارج شدن از پنجره",
+      "ctrlPluswx": "exchange current window with next one",
+      "ctrlPlusw=": "make all windows equal height & width",
+      "ctrlPluswh": "انتقال مکان نما به پنجره سمت چپ",
+      "ctrlPluswl": "انتقال مکان نما به پنجره سمت راست",
+      "ctrlPluswj": "انتقال مکان نما به پنجره پایین",
+      "ctrlPluswk": "انتقال مکان نمابه پنجره بالا"
+    }
+  },
+  "tabs": {
+    "title": "تب ها",
+    "commands": {
+      "colonTabNew": "باز کردن فایل در تب جدید",
+      "ctrlPluswT": "انتقال بافر فعلی به تب جدید",
+      "gt": "برو به تب بعدی",
+      "gT": "برو به تب قبلی",
+      "hashgt": "برو به تب شماره #",
+      "colontabmove": "انتقال تب فعلی به موقعیت #",
+      "colontabc": "بستن تب فعلی و تمام پنجره های آن",
+      "colontabo": "بستن تمامی تبها غیر از تب فعلی",
+      "colontabdo": "اجرای دستور روی تمامی تبها"
+    }
+  },
+  "diff": {
+    "title": "Diff",
+    "commands": {
+      "zf": "manually define a fold up to motion",
+      "zd": "delete fold under the cursor",
+      "za": "toggle fold under the cursor",
+      "zo": "open fold under the cursor",
+      "zc": "close fold under the cursor",
+      "zr": "reduce (open) all folds by one level",
+      "zm": "fold more (close) all folds by one level",
+      "zi": "toggle folding functionality",
+      "closeSquarec": "jump to start of next change",
+      "openSquarec": "jump to start of previous change",
+      "do": "obtain (get) difference (from other buffer)",
+      "dp": "put difference (to other buffer)",
+      "colonDiffthis": "make current window part of diff",
+      "colonDiffupdate": "update differences",
+      "colonDiffoff": "switch off diff mode for current window"
+    },
+    "tip1": "The commands for folding (e.g. <kbd>za</kbd>) operate on one level. To operate on all levels, use uppercase letters (e.g. <kbd>zA</kbd>).",
+    "tip2": "To view the differences of files, one can directly start Vim in diff mode by running <kbd>vimdiff</kbd> in a terminal. One can even set this as <kbd>git difftool</kbd>."
+  },
+  "words": {
+    "keyword": "کلید واژه",
+    "file": "فایل",
+    "movement": "حرکت مکان نما"
+  },
+  "languages": {
+    "title": "زبان"
+  },
+  "footer": "سورس کد در زیر",
+  "layout": "page",
+  "permalink": "/lang/fa_ir/"
+}
